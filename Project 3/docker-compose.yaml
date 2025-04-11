@@ -1,0 +1,8 @@
+services:
+  hurricane-damage-classifier:
+    image: hurricane-damage-classifier:1.0
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
