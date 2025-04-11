@@ -1,70 +1,61 @@
 # Hurricane Harvey Damage Classification
 
-This project contains code for classifying satellite images of buildings after Hurricane Harvey as either damaged or not damaged. The project includes a data preprocessing and model training notebook, as well as a deployable inference server.
+This project contains an image classification system to identify damaged vs. non-damaged buildings in satellite imagery after Hurricane Harvey. The system includes data preprocessing, model training, and a deployable inference server that classifies new images.
 
 ## Project Structure
 
-- `Hurricane Damage Classification - Parts 1 & 2.ipynb`: Jupyter notebook containing data preprocessing, model training, and evaluation
+- `Hurricane_Damage_Classification.ipynb`: Jupyter notebook containing data preprocessing, model training, and evaluation
 - `app.py`: Flask-based inference server
 - `Dockerfile`: For building a Docker container
 - `requirements.txt`: Python dependencies
 - `docker-compose.yml`: Configuration for deployment
-- `best_hurricane_damage_model.h5`: The saved model file (generated after training)
-- `test_server.py`: Script to test the API endpoints
+- `best_hurricane_damage_model.h5`: Saved model file (generated after training)
+- `test_server.py`: Script to test the inference server
 
-## Part 1 & 2: Data Preprocessing and Model Training
+## Getting Started
 
-The notebook handles:
-- Loading and exploring the dataset
-- Visualizing sample images
-- Preprocessing images for model training
-- Building and training three different model architectures:
-  - Fully-connected (Dense) ANN
-  - LeNet-5 CNN
-  - Alternate-LeNet-5 CNN
-- Evaluating and comparing model performance
-- Saving the best model for deployment
+### Prerequisites
 
-## Part 3: Model Inference Server
+- Python 3.9+
+- TensorFlow 2.8.0+
+- Docker and Docker Compose (for deployment)
+- The Hurricane Harvey dataset (organized in damage/no_damage folders)
 
-The model is served via a Flask API with two endpoints:
-- `GET /summary`: Returns metadata about the model
-- `POST /inference`: Accepts an image and returns a classification
+### Running the Notebook
 
-### Building the Docker Container
+1. Clone this repository
+2. Download the Hurricane Harvey dataset
+3. Update the dataset path in the notebook
+4. Run the notebook to:
+   - Preprocess the image data
+   - Train multiple model architectures
+   - Evaluate performance
+   - Save the best model
 
-To containerize the Hurricane Damage Classifier API, you'll need Docker installed on your system. Follow these steps:
+## Model Deployment
 
-1. **Train the model using the notebook** (or use the pre-trained model if provided)
-2. **Build the Docker image**:
-   ```bash
-   docker build -t hurricane-damage-classifier:1.0 .
-   ```
+### Docker Image
 
-### Deploying the Flask App
+A pre-built Docker image for this project has been pushed to Docker Hub and is available at:
 
-After building the image, deploy the containerized Flask app by running:
-
-```bash
-docker run --name "hurricane-classifier" -d -p 5000:5000 hurricane-damage-classifier:1.0
+```
+rushilrandhar/hurricane-damage-classifier:latest
 ```
 
-This command runs the Docker container and maps port 5000 of the container to port 5000 on your host, allowing you to access the Flask app.
-
-Alternatively, you can use Docker Compose:
+You can pull this image directly without having to build it yourself:
 
 ```bash
-docker-compose up -d
+docker pull rushilrandhar/hurricane-damage-classifier:latest
 ```
 
-Note: Before using Docker Compose, update the `docker-compose.yml` file to use the local image name instead of a Docker Hub reference:
+### Running with Docker Compose
+
+1. Edit the `docker-compose.yml` file to use the provided image:
 
 ```yaml
-version: '3'
-
 services:
   hurricane-damage-classifier:
-    image: hurricane-damage-classifier:1.0
+    image: rushilrandhar/hurricane-damage-classifier:latest
     ports:
       - "5000:5000"
     restart: unless-stopped
@@ -72,32 +63,32 @@ services:
       - ./logs:/app/logs
 ```
 
-### Stopping the Server
-
-To stop the server when using `docker run`:
+2. Start the container:
 
 ```bash
-docker stop hurricane-classifier
-docker rm hurricane-classifier
+docker-compose up -d
 ```
 
-Or when using Docker Compose:
+3. Stop the container:
 
 ```bash
 docker-compose down
 ```
 
-### Accessing the API Endpoints
+## Inference Server API
 
-You can interact with the application via the following example curl commands:
+The inference server provides two endpoints:
 
-#### Get Model Summary
+### 1. Model Summary
 
+**Endpoint**: `GET /summary`
+
+**Example Request**:
 ```bash
-curl localhost:5000/summary
+curl -X GET http://localhost:5000/summary
 ```
 
-Example response:
+**Example Response**:
 ```json
 {
   "name": "Hurricane Harvey Damage Classifier",
@@ -105,47 +96,46 @@ Example response:
   "layers": 10,
   "input_shape": "(None, 128, 128, 3)",
   "summary": "...",
-  "total_params": 1234567
+  "total_params": 4287809
 }
 ```
 
-#### Classify an Image
+### 2. Image Classification
 
+**Endpoint**: `POST /inference`
+
+**Request Format Options**:
+
+1. Send image as binary data:
 ```bash
-# Using binary data
-curl -X POST -H "Content-Type: application/octet-stream" --data-binary "@path/to/image.jpg" http://localhost:5000/inference
+curl -X POST -H "Content-Type: application/octet-stream" \
+     --data-binary "@path/to/image.jpg" \
+     http://localhost:5000/inference
 ```
 
-Or using form data:
-
+2. Send image as form data:
 ```bash
-# Using form data
-curl -X POST -F "file=@path/to/image.jpg" http://localhost:5000/inference
+curl -X POST -F "image=@path/to/image.jpg" \
+     http://localhost:5000/inference
 ```
 
-Example response:
+**Example Response**:
 ```json
 {
   "prediction": "damage"
 }
 ```
 
-### Running the Test Script
+The response will always contain a `prediction` field with either `"damage"` or `"no_damage"` as the value.
 
-The test script validates that the server is working correctly:
+## Testing the Server
+
+Use the included `test_server.py` script to verify the server is working correctly:
 
 ```bash
-# Install requests library if needed
-pip install requests
+# Test with default values (localhost:5000 and test_image.jpg)
+python test_server.py
 
-# Run the test script
-python test_server.py http://localhost:5000 path/to/test_image.jpg
+# Test with custom server URL and image
+python test_server.py http://your-server:5000 path/to/image.jpg
 ```
-
-## Part 4: Report
-
-See the separate PDF report for a detailed analysis of:
-- Data preparation methods
-- Model design decisions
-- Evaluation results and model confidence
-- Deployment and inference details
