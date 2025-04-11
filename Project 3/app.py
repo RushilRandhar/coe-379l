@@ -16,12 +16,13 @@ model_summary = []
 model.summary(print_fn=lambda x: model_summary.append(x))
 model_summary_str = "\n".join(model_summary)
 
+# preprocessing function
 def preprocess_image(image, target_size=(128, 128)):
     if image.mode != "RGB":
         image = image.convert("RGB")
     image = image.resize(target_size)
     image = img_to_array(image)
-    image = image / 255.0
+    image = image / 255.0  # Normalize to [0,1]
     image = np.expand_dims(image, axis=0)
     return image
 
@@ -39,25 +40,32 @@ def get_summary():
 
 @app.route('/inference', methods=['POST'])
 def predict():
-    if 'file' not in request.files and request.data:
-        image_bytes = io.BytesIO(request.data)
-        image = Image.open(image_bytes)
-    elif 'file' in request.files:
-        image = Image.open(request.files['file'])
-    else:
-        return jsonify({"error": "No image provided"}), 400
+    try:
+        if request.files and 'image' in request.files:
+            image = Image.open(request.files['image'])
+        elif 'file' in request.files:
+            image = Image.open(request.files['file'])
+        elif request.data:
+            image_bytes = io.BytesIO(request.data)
+            image = Image.open(image_bytes)
+        else:
+            return jsonify({"error": "No image provided"}), 400
 
-    processed_image = preprocess_image(image)
+        processed_image = preprocess_image(image)
+        
+        prediction = model.predict(processed_image)
+        probability = float(prediction[0][0])
+        
+        if probability > 0.5:
+            result = "damage"
+        else:
+            result = "no_damage"
+        
+        return jsonify({"prediction": result})
     
-    prediction = model.predict(processed_image)
-    probability = float(prediction[0][0])
-    
-    if probability > 0.5:
-        result = "damage"
-    else:
-        result = "no_damage"
-    
-    return jsonify({"prediction": result})
+    except Exception as e:
+        app.logger.error(f"Error processing request: {str(e)}")
+        return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)
