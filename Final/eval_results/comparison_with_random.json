@@ -1,0 +1,850 @@
+{
+  "baseline": {
+    "detailed_results": {
+      "Black color": {
+        "k=5": {
+          "precision@k": 0.6,
+          "recall@k": 0.005319148936170213,
+          "average_precision": 0.0031323877068557917,
+          "ndcg@k": 0.5147714448836774
+        },
+        "k=10": {
+          "precision@k": 0.5,
+          "recall@k": 0.008865248226950355,
+          "average_precision": 0.004412923561859732,
+          "ndcg@k": 0.42566281055137817
+        },
+        "k=20": {
+          "precision@k": 0.45,
+          "recall@k": 0.015957446808510637,
+          "average_precision": 0.008181455276920003,
+          "ndcg@k": 0.46889895508215323
+        }
+      },
+      "Natural color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Pink color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Blue color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.05,
+          "recall@k": 0.010638297872340425,
+          "average_precision": 0.0005319148936170213,
+          "ndcg@k": 0.03233829114831982
+        }
+      },
+      "Fuchsia color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.05,
+          "recall@k": 0.16666666666666666,
+          "average_precision": 0.012820512820512822,
+          "ndcg@k": 0.07947838320659593
+        }
+      },
+      "Red color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Tan color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Green color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.1,
+          "recall@k": 0.045454545454545456,
+          "average_precision": 0.005199049316696376,
+          "ndcg@k": 0.07682128477101409
+        }
+      },
+      "Light Blue color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "White color": {
+        "k=5": {
+          "precision@k": 0.2,
+          "recall@k": 0.009009009009009009,
+          "average_precision": 0.0022522522522522522,
+          "ndcg@k": 0.14606834984270645
+        },
+        "k=10": {
+          "precision@k": 0.1,
+          "recall@k": 0.009009009009009009,
+          "average_precision": 0.001287001287001287,
+          "ndcg@k": 0.07336392209936005
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Leopard color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Beige color": {
+        "k=5": {
+          "precision@k": 0.4,
+          "recall@k": 0.05128205128205128,
+          "average_precision": 0.035897435897435895,
+          "ndcg@k": 0.4703652827859579
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Multi color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Hot Pink color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Navy color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.05,
+          "recall@k": 0.02702702702702703,
+          "average_precision": 0.002457002457002457,
+          "ndcg@k": 0.039621067055815605
+        }
+      },
+      "Cream color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.1,
+          "recall@k": 0.07142857142857142,
+          "average_precision": 0.03571428571428571,
+          "ndcg@k": 0.13886244387355454
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Chocolate color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Mocha color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Yellow color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Ivory color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      }
+    },
+    "aggregate_metrics": {
+      "k=5": {
+        "avg_precision": 0.06000000000000001,
+        "avg_recall": 0.003280510461361525,
+        "map": 0.002064103792827197,
+        "avg_ndcg": 0.0565602538756171
+      },
+      "k=10": {
+        "avg_precision": 0.034999999999999996,
+        "avg_recall": 0.0044651414332265394,
+        "map": 0.0020707105281573364,
+        "avg_ndcg": 0.03189445882621464
+      },
+      "k=20": {
+        "avg_precision": 0.034999999999999996,
+        "avg_recall": 0.01328719919145451,
+        "map": 0.001459496738237434,
+        "avg_ndcg": 0.03485789906319493
+      }
+    }
+  },
+  "embedding": {
+    "detailed_results": {
+      "Black color": {
+        "k=5": {
+          "precision@k": 1.0,
+          "recall@k": 0.008865248226950355,
+          "average_precision": 0.008865248226950355,
+          "ndcg@k": 1.0
+        },
+        "k=10": {
+          "precision@k": 1.0,
+          "recall@k": 0.01773049645390071,
+          "average_precision": 0.01773049645390071,
+          "ndcg@k": 1.0
+        },
+        "k=20": {
+          "precision@k": 0.85,
+          "recall@k": 0.030141843971631204,
+          "average_precision": 0.02943140426507794,
+          "ndcg@k": 0.8965552481642729
+        }
+      },
+      "Natural color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Pink color": {
+        "k=5": {
+          "precision@k": 0.6,
+          "recall@k": 0.06666666666666667,
+          "average_precision": 0.06666666666666667,
+          "ndcg@k": 0.7227265726449519
+        },
+        "k=10": {
+          "precision@k": 0.4,
+          "recall@k": 0.08888888888888889,
+          "average_precision": 0.08148148148148147,
+          "ndcg@k": 0.5473983622993502
+        },
+        "k=20": {
+          "precision@k": 0.25,
+          "recall@k": 0.1111111111111111,
+          "average_precision": 0.08941798941798941,
+          "ndcg@k": 0.3896293176169854
+        }
+      },
+      "Blue color": {
+        "k=5": {
+          "precision@k": 0.6,
+          "recall@k": 0.031914893617021274,
+          "average_precision": 0.01702127659574468,
+          "ndcg@k": 0.4912596920895758
+        },
+        "k=10": {
+          "precision@k": 0.4,
+          "recall@k": 0.0425531914893617,
+          "average_precision": 0.024113475177304965,
+          "ndcg@k": 0.3971921948634016
+        },
+        "k=20": {
+          "precision@k": 0.5,
+          "recall@k": 0.10638297872340426,
+          "average_precision": 0.05426467274171642,
+          "ndcg@k": 0.46825973213938765
+        }
+      },
+      "Fuchsia color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Red color": {
+        "k=5": {
+          "precision@k": 0.8,
+          "recall@k": 0.07017543859649122,
+          "average_precision": 0.06666666666666667,
+          "ndcg@k": 0.8539316501572937
+        },
+        "k=10": {
+          "precision@k": 0.4,
+          "recall@k": 0.07017543859649122,
+          "average_precision": 0.06666666666666667,
+          "ndcg@k": 0.5541432109622958
+        },
+        "k=20": {
+          "precision@k": 0.25,
+          "recall@k": 0.08771929824561403,
+          "average_precision": 0.07341430499325237,
+          "ndcg@k": 0.39493268509226004
+        }
+      },
+      "Tan color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Green color": {
+        "k=5": {
+          "precision@k": 0.4,
+          "recall@k": 0.045454545454545456,
+          "average_precision": 0.014772727272727272,
+          "ndcg@k": 0.27727342735504823
+        },
+        "k=10": {
+          "precision@k": 0.3,
+          "recall@k": 0.06818181818181818,
+          "average_precision": 0.02451298701298701,
+          "ndcg@k": 0.2532954041105318
+        },
+        "k=20": {
+          "precision@k": 0.2,
+          "recall@k": 0.09090909090909091,
+          "average_precision": 0.03277744982290436,
+          "ndcg@k": 0.20308965038371912
+        }
+      },
+      "Light Blue color": {
+        "k=5": {
+          "precision@k": 0.2,
+          "recall@k": 0.041666666666666664,
+          "average_precision": 0.020833333333333332,
+          "ndcg@k": 0.21398626473452756
+        },
+        "k=10": {
+          "precision@k": 0.1,
+          "recall@k": 0.041666666666666664,
+          "average_precision": 0.020833333333333332,
+          "ndcg@k": 0.13886244387355454
+        },
+        "k=20": {
+          "precision@k": 0.1,
+          "recall@k": 0.08333333333333333,
+          "average_precision": 0.02573529411764706,
+          "ndcg@k": 0.12368025945932598
+        }
+      },
+      "White color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.15,
+          "recall@k": 0.02702702702702703,
+          "average_precision": 0.003241601925812452,
+          "ndcg@k": 0.1049218936328902
+        }
+      },
+      "Leopard color": {
+        "k=5": {
+          "precision@k": 0.6,
+          "recall@k": 0.23076923076923078,
+          "average_precision": 0.23076923076923078,
+          "ndcg@k": 0.7227265726449519
+        },
+        "k=10": {
+          "precision@k": 0.4,
+          "recall@k": 0.3076923076923077,
+          "average_precision": 0.28205128205128205,
+          "ndcg@k": 0.5473983622993502
+        },
+        "k=20": {
+          "precision@k": 0.25,
+          "recall@k": 0.38461538461538464,
+          "average_precision": 0.30608974358974356,
+          "ndcg@k": 0.5101005709138581
+        }
+      },
+      "Beige color": {
+        "k=5": {
+          "precision@k": 0.6,
+          "recall@k": 0.07692307692307693,
+          "average_precision": 0.06666666666666667,
+          "ndcg@k": 0.6843515475204855
+        },
+        "k=10": {
+          "precision@k": 0.3,
+          "recall@k": 0.07692307692307693,
+          "average_precision": 0.06666666666666667,
+          "ndcg@k": 0.4440973278132557
+        },
+        "k=20": {
+          "precision@k": 0.15,
+          "recall@k": 0.07692307692307693,
+          "average_precision": 0.06666666666666667,
+          "ndcg@k": 0.2866059149089867
+        }
+      },
+      "Multi color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Hot Pink color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        }
+      },
+      "Navy color": {
+        "k=5": {
+          "precision@k": 0.2,
+          "recall@k": 0.02702702702702703,
+          "average_precision": 0.005405405405405406,
+          "ndcg@k": 0.13120507751234178
+        },
+        "k=10": {
+          "precision@k": 0.1,
+          "recall@k": 0.02702702702702703,
+          "average_precision": 0.005405405405405406,
+          "ndcg@k": 0.08514311764162098
+        },
+        "k=20": {
+          "precision@k": 0.1,
+          "recall@k": 0.05405405405405406,
+          "average_precision": 0.008108108108108109,
+          "ndcg@k": 0.0872868792203057
+        }
+      },
+      "Cream color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=20": {
+          "precision@k": 0.05,
+          "recall@k": 0.07142857142857142,
+          "average_precision": 0.0047619047619047615,
+          "ndcg@k": 0.04455257454866284
+        }
+      },
+      "Chocolate color": {
+        "k=5": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "average_precision": 0.0,
+          "ndcg@k": 0.0
+        },
+        "k=10": {
+          "precision@k": 0.2,
+          "recall@k": 0.18181818181818182,
+          "average_precision": 0.029545454545454545,
+          "ndcg@k": 0.13305201013572898
+        },
+        "k=20": {
+          "precision@k": 0.15,
+          "recall@k": 0.2727272727272727,
+          "average_precision": 0.045588235294117645,
+          "ndcg@k": 0.17508382992760896
+        }
+      },
+      "Mocha color": {
+        "k=5": {
+          "precision@k": 0.2,
+          "recall@k": 0.14285714285714285,
+          "average_precision": 0.028571428571428574,
+          "ndcg@k": 0.13120507751234178
+        },
+        "k=10": {
+          "precision@k": 0.1,
+          "recall@k": 0.14285714285714285,
+          "average_precision": 0.028571428571428574,
+          "ndcg@k": 0.10633668103022985
+        },
+        "k=20": {
+          "precision@k": 0.05,
+          "recall@k": 0.14285714285714285,
+          "average_precision": 0.028571428571428574,
+          "ndcg@k": 0.10633668103022985
+        }
+      },
+      "Yellow color": {
+        "k=5": {
+          "precision@k": 0.2,
+          "recall@k": 0.2,
+          "average_precision": 0.05,
+          "ndcg@k": 0.14606834984270645
+        },
+        "k=10": {
+          "precision@k": 0.2,
+          "recall@k": 0.4,
+          "average_precision": 0.10714285714285714,
+          "ndcg@k": 0.2591217516005785
+        },
+        "k=20": {
+          "precision@k": 0.1,
+          "recall@k": 0.4,
+          "average_precision": 0.10714285714285714,
+          "ndcg@k": 0.2591217516005785
+        }
+      },
+      "Ivory color": {
+        "k=5": {
+          "precision@k": 0.4,
+          "recall@k": 0.04,
+          "average_precision": 0.03333333333333333,
+          "ndcg@k": 0.5087403079104241
+        },
+        "k=10": {
+          "precision@k": 0.2,
+          "recall@k": 0.04,
+          "average_precision": 0.03333333333333333,
+          "ndcg@k": 0.33013764944712026
+        },
+        "k=20": {
+          "precision@k": 0.1,
+          "recall@k": 0.04,
+          "average_precision": 0.03333333333333333,
+          "ndcg@k": 0.21306005945048595
+        }
+      }
+    },
+    "aggregate_metrics": {
+      "k=5": {
+        "avg_precision": 0.29000000000000004,
+        "avg_recall": 0.04911599684024096,
+        "map": 0.03047859917540769,
+        "avg_ndcg": 0.29417372699623245
+      },
+      "k=10": {
+        "avg_precision": 0.20500000000000002,
+        "avg_recall": 0.0752757118297432,
+        "map": 0.039402743392105095,
+        "avg_ndcg": 0.239808925803851
+      },
+      "k=20": {
+        "avg_precision": 0.1625,
+        "avg_recall": 0.09896150929633571,
+        "map": 0.04542724973762799,
+        "avg_ndcg": 0.21316085240447785
+      }
+    }
+  }
+}
